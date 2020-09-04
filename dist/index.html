@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+   <div class="column-1 pull-column-2">
+    <h1>JOB FAIR</h1>
+    <p> FRI, SEP 11, 2020  </p>
+	<p> 6:00 PM – 9:00 PM </p>
+	<p> CEST VIRTUAL </p>
+   </div>
+   <div class="column-2 push-column-1">
+	<form action="action_page.php">
+		<div class="registercontainer">
+			<h2>Register</h2>
+			<p>Please fill in this form to Register.</p>
+			<div class="field-container">
+				<label for="email"><b>Email </b><span class="required">*</span></label>
+			</div>
+			<div class="field-container">
+				<input type="text" name="email" id="email" required>
+			</div>
+			<div class="field-container">
+				<label for="firstname"><b>First Name </b><span class="required">*</span></label>
+			</div>
+			<div class="field-container">
+				<input type="text" name="firstname" id="firstname" required>
+			</div>
+			<div class="field-container">
+				<label for="lastname"><b>Last Name </b><span class="required">*</span></label>
+			</div>
+			<div class="field-container">
+				<input type="text" name="lastname" id="lastname" required>
+			</div>
+			<p>Send me career advice and virtual event invites straight to my inbox! (Opt out at any time)</p>
+			<button type="submit">Register</button>
+			<p>By signing up you accept the <a href="#">Terms & Privacy</a></p>
+		</div>
+	</form>
+   </div>
+  </div>
+  <div style="height: 0; width: 0; padding: 0;">
+</div>
+</div>
+
+<div id="clockdiv">
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+<section class="registration">
+	<div class="ticket-switcher">
+		<div class="ticket-1">
+			<p>Ticket 1 - Personal</p>
+			<button class="btn" type="button" onclick="toggleDiv('ticket1')">
+                Choose Ticket
+            </button>
+			<div id="ticket1" style="display:none;" >
+			 <form action="/action_page.php">
+			 <div class="field-container">
+			  <label for="fname">First Name</label>
+			 </div>
+			 <div class="field-container">
+			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	         </div>
+			 <div class="field-container">
+			  <label for="lname">Last Name</label>
+			 </div>
+			 <div>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			 </div>
+			 <div class="field-container">
+			  <label for="country">Country</label>
+			 </div>
+			 <div class="field-container">
+			  <input type="text" id="lemail" name="lemail" placeholder="Your country..">
+			  </div>
+		
+			  <input type="submit" value="Submit">
+			</form>
+			</div>
+		</div>
+		<div class="ticket-2">
+			<p>Ticket 2 - Online</p>
+			<button class="btn" type="button" onclick="toggleDiv('ticket2')">
+                Choose Ticket
+            </button>
+			<div id="ticket2" style="display:none;">
+			 <form action="/action_page.php">
+			 <div class="field-container">
+			  <label for="fname">First Name</label>
+			 </div>
+			 <div class="field-container">
+			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	         </div>
+			 <div class="field-container">
+			  <label for="lname">Last Name</label>
+			 </div>
+			 <div>
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			 </div>
+			 <div class="field-container">
+			  <label for="email">E-mail</label>
+			 </div>
+			 <div class="field-container">
+			  <input type="text" id="lemail" name="lemail" placeholder="Your email..">
+			  </div>
+		
+			  <input type="submit" value="Submit">
+			</form>
+			</div>
+		</div>
+	</div>
+</section>
+<p>Other Page Content..</p>
+<footer>Footer</footer/>
+<script type="application/javascript" src="js/script.js"></script>
+<script src="bundle.js"></script>
+</body>
+</html>

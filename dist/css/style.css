@@ -1,0 +1,148 @@
+
+@media (min-width: 768px) {
+  .column-1,
+  .column-2 {
+    position: relative;
+    float: left;
+  }
+  .column-1 {
+    width: 40%;
+  }
+  .column-2 {
+    width: 60%;
+  }
+  .push-column-1 {
+    left: 5%;
+    right: auto;
+  }
+  .pull-column-2 {
+    left: auto;
+    right: 5%;
+  }
+}
+body, html {
+  height: 95%;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* The hero image */
+.hero-image {
+/* Using "linear-gradient" to add a darken background effect to the image (hero-image.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-image.jpg");
+/* hero image to take 70% of the screen */
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+  transform: translate(-70%, -70%);
+  color: white;
+  width: 50%;
+  margin: auto;
+}
+
+.hero-text button {
+  width: 80%;
+}
+
+button {
+  border: 2;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #555;
+  color: white;
+}
+.required {
+    color: red;
+}
+a {
+	color:black;
+}
+a:focus, a:hover {
+    color: #ec5167;
+}
+.field-container {
+	padding: 2px;
+}
+.registercontainer {
+	text-align: left;
+	border-style: groove;
+	border-radius: 7px;
+	padding: 5px;
+}
+input {
+	border-radius: 7px;
+	height: 30px;
+	border-style: groove;
+	width: 80%;
+}
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 30px;
+}
+section.counter {
+    background: linear-gradient(90deg,#ec5267,#da0f8f);
+    padding: 12px;
+}
+
+body{
+    text-align: center;
+    background: #00ECB9;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+.registration .ticket-switcher{
+	border-style: groove;
+	border-radius: 7px;
+	padding: 5px;
+  margin: auto;
+  width: 50%;
+}
