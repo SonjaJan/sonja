@@ -11,17 +11,9 @@
   .column-2 {
     width: 60%;
   }
-  .push-column-1 {
-    left: 5%;
-    right: auto;
-  }
-  .pull-column-2 {
-    left: auto;
-    right: 5%;
-  }
 }
 body, html {
-  height: 95%;
+  height: 100%;
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -44,8 +36,12 @@ body, html {
   left: 65%;
   transform: translate(-70%, -70%);
   color: white;
-  width: 50%;
+  width: 70%;
   margin: auto;
+}
+
+.hero-text p{
+  margin: 0;
 }
 
 .hero-text button {
